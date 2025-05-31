@@ -14,11 +14,13 @@ public class EventController {
 
     @GetMapping
     public List<Event> getAllEvents() {
+        System.out.println(eventRepository.findAll());
         return eventRepository.findAll();
     }
 
     @PostMapping
     public Event createEvent(@RequestBody Event event) {
+        System.out.println( "\n\nfkafh\n\n\n\n" + event);
         return eventRepository.save(event);
     }
 }

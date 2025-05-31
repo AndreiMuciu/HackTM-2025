@@ -7,7 +7,8 @@
 
 ---
 
-## 🚀 Overview
+## 🚀 Overview 
+Ideea de proiect: https://project.banatit.ro/dl/projects/s/d88fe3/r/S3VqcdU95OX1tC9DQ6cg
 
 Timișoara’s vibrant tech community faces a major challenge: fragmented information management. Organizations like Banat IT, TimJS, Women in Tech, and others must manually update the same event information across multiple platforms. This leads to wasted time, contradictory details, and missed opportunities.
 
