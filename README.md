@@ -1,40 +1,52 @@
 
-# 📌 Project Title
+# 📌 Timișoara Tech Ecosystem Synchronization Platform
 
-> **One-liner:** A concise description that captures the essence of your project.
+> **One-liner:** Centralize and synchronize event and resource information across Timișoara’s tech communities to reduce redundancy and enhance participation.
 
-![Project Banner](https://your-image-url.com/banner.png)
+![Tech Ecosystem](https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Pia%C8%9Ba_Victoriei_Timi%C8%99oara.jpg/640px-Pia%C8%9Ba_Victoriei_Timi%C8%99oara.jpg)
 
 ---
 
 ## 🚀 Overview
 
-Provide a brief introduction to your project, explaining its purpose, the problem it solves, and its significance.
+Timișoara’s vibrant tech community faces a major challenge: fragmented information management. Organizations like Banat IT, TimJS, Women in Tech, and others must manually update the same event information across multiple platforms. This leads to wasted time, contradictory details, and missed opportunities.
+
+This project aims to solve this issue by developing a centralized API-driven platform, allowing organizations to update information once and have it automatically synchronized across all channels.
 
 ---
 
 ## 🖼️ Visuals
 
-Include screenshots, GIFs, or videos to showcase your project's interface and functionality. Visual aids help users quickly grasp what your project is about.
+![Workflow Diagram](https://miro.medium.com/v2/resize:fit:828/format:webp/1*OTMGW5QaPOwoJ4xU5gTnLQ.png)
+*Conceptual workflow for centralized data distribution*
 
 ---
 
 ## 🛠️ Features
 
-- Feature 1: Brief description.
-- Feature 2: Brief description.
-- Feature 3: Brief description.
+- 🔁 Centralized API for events, mentors, communities, programs, and spaces
+- 🔔 Notification system for updated or new content
+- 🧩 Widget interfaces for website integration (WordPress, Meetup, etc.)
+- 👨‍💼 Admin dashboard for content management
+- 🔌 Real-time synchronization with external platforms
+- 🔐 Secure and scalable backend architecture
 
 ---
 
 ## 📦 Installation
 
-Provide step-by-step instructions on how to install and set up your project. Include any prerequisites or dependencies.
-
 ```bash
-# Example commands
-git clone https://github.com/yourusername/yourproject.git
-cd yourproject
+# Clone the repository
+git clone https://github.com/yourusername/timisoara-ecosystem-platform.git
+cd timisoara-ecosystem-platform
+
+# Backend setup
+cd backend
+npm install
+npm run dev
+
+# Frontend setup
+cd ../frontend
 npm install
 npm start
 ```
@@ -43,43 +55,63 @@ npm start
 
 ## 🧪 Usage
 
-Demonstrate how to use your project with code snippets or command-line examples. Include expected outputs if applicable.
+After installing and running the platform, access the admin dashboard via:
 
 ```bash
-# Example usage
-node yourscript.js --option
+http://localhost:3000/admin
 ```
+
+- Add a new event, mentor, or organization.
+- Enable synchronization with desired platforms (WordPress, Discord, etc.).
+- View and manage analytics from the dashboard.
 
 ---
 
 ## 📚 Documentation
 
-Link to detailed documentation if available. This could be a separate `docs` folder or an external site.
+Detailed documentation is available in the `docs/` directory.
+
+Includes:
+- API reference (REST & GraphQL)
+- Widget configuration examples
+- Platform-specific integration guidelines
 
 ---
 
 ## 🧩 Roadmap
 
-Outline planned features or future improvements. This gives users insight into the project's direction.
-
-- [ ] Feature A
-- [ ] Feature B
-- [ ] Feature C
+- [x] Define data structures and models for mentors, events, and programs
+- [x] REST API implementation with Node.js and Express
+- [ ] GraphQL support
+- [ ] OAuth2-based user authentication
+- [ ] Widget embeddables for WordPress and Meetup
+- [ ] Discord bot for community notifications
 
 ---
 
 ## 🤝 Contributing
 
-Welcome contributions by providing guidelines on how others can help. Include steps for setting up a development environment, coding standards, and how to submit pull requests.
+We welcome contributors of all backgrounds. Here's how to get started:
+
+```bash
+# Fork the repo and clone it locally
+# Create a feature branch: git checkout -b feature-name
+# Commit your changes: git commit -m 'Add feature'
+# Push to the branch: git push origin feature-name
+# Submit a pull request
+```
 
 ---
 
 ## 🧪 Tests
 
-Explain how to run tests for your project. Include commands and any necessary setup.
-
 ```bash
-# Example test command
+# Run backend tests
+cd backend
+npm test
+
+# Run frontend tests
+cd ../frontend
 npm test
 ```
 
@@ -87,37 +119,47 @@ npm test
 
 ## 📄 License
 
-Specify the license under which your project is distributed.
+This project is licensed under the MIT License.
 
 ---
 
 ## 🙋‍♂️ Support
 
-Provide contact information or links to where users can seek help or report issues.
+For issues and feature requests, please use the [GitHub Issues](https://github.com/yourusername/timisoara-ecosystem-platform/issues).
+
+Contact core team via: timisoara-sync@communityhub.org
 
 ---
 
 ## 🧑‍💻 Authors and Acknowledgments
 
-List the project's authors and acknowledge any contributors or resources that helped in its development.
+Developed with input from:
+- Banat IT
+- Startup Weekend Timișoara
+- Codecamp
+- Women in Tech
+- GDSC, UVT, UPT, FABER, DevPlant
+
+Sponsored by: Nokia, Continental, and other local partners.
 
 ---
 
 ## 📈 Project Status
 
-Indicate the current status of the project (e.g., active development, maintenance mode, no longer maintained).
+🚧 MVP in development — backend API ready, frontend and integrations in progress
 
 ---
 
 ## 📊 Badges
 
-Include badges to display build status, license, version, or other relevant metrics.
-
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
 ![License](https://img.shields.io/badge/license-MIT-blue)
+![Community](https://img.shields.io/badge/community-8000%2B-blueviolet)
 
 ---
 
 ## 📎 Additional Resources
 
-- Link to tutorials, related projects, or other resources that provide additional context or information.
+- [GraphQL vs REST for community APIs](https://www.howtographql.com/basics/1-graphql-vs-rest/)
+- [Best Practices for Event Platform Design](https://uxdesign.cc)
+- [Timisoara Tech Calendar (External)](https://banatit.ro/events)
